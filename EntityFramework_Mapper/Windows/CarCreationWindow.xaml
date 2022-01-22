@@ -1,0 +1,24 @@
+﻿<Window x:Class="EntityFramework_Mapper.Windows.CarCreationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntityFramework_Mapper.Windows"
+        mc:Ignorable="d"
+        Title="Utwórz samochód" Height="279" Width="624" ResizeMode="NoResize">
+    <Grid Margin="50">
+        <StackPanel>
+            <DockPanel Margin="0,0,0,10">
+                <Label Content="Marka:"/>
+                <TextBox Margin="0,0,300,0" x:Name="txt_Brand" LostFocus="txt_Brand_LostFocus"/>
+            </DockPanel>
+            <DockPanel Margin="0,0,0,10">
+                <Label Content="Model:"/>
+                <TextBox x:Name="txt_Model" Margin="0,0,300,0" LostFocus="txt_Model_LostFocus"/>
+            </DockPanel>
+            <DockPanel>
+                <Button x:Name="btn_CreateCar" Height="30" Click="btn_CreateCar_Click">Utwórz samochód</Button>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>
